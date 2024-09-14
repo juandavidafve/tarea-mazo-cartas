@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", (event) => {
 
   if (formData.get("user") === USER && formData.get("pass") === PASS) {
     localStorage.setItem("user", USER);
-    window.location.href = "/app";
+    window.location.href = "../app";
   } else {
     alert("Contraseña Incorrecta");
   }
