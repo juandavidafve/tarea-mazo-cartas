@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poker de Cartas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="body--full body--centered body--colored-slate">
+    <main class="app">
+      <section class="image-section" id="img-cards"></section>
+      <table class="table-section">
+        <thead>
+          <th>#</th>
+          <th>Carta</th>
+          <th>Cartas</th>
+        </thead>
+        <tbody id="table-cards"></tbody>
+      </table>
+      <section class="register-card">
+        <h2 class="register-card__title">Registro de Cartas</h2>
+        <form id="register" class="register-card__form">
+          <div class="input-container">
+            <label for="card-number" class="input-container__label"
+              >Número</label
+            >
+            <select
+              id="card-number"
+              name="card-number"
+              class="input-container__input"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">Sota</option>
+              <option value="12">Reina</option>
+              <option value="13">Rey</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="card" class="input-container__label">Carta</label>
+            <select id="card" name="card" class="input-container__input">
+              <option value="diamond">Diamante</option>
+              <option value="heart">Corazón</option>
+              <option value="club">Trebol</option>
+              <option value="spades">Pica</option>
+            </select>
+          </div>
+
+          <input
+            type="submit"
+            value="Registrar"
+            class="register-card__submit"
+          />
+        </form>
+      </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
